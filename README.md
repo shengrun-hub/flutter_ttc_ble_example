@@ -2,7 +2,7 @@
 
 Flutter TTC BLE example.
 
-目前只支持Android平台，系统最低Android5.0。
+支持Android5.0+ 和 iOS 10.0+
 
 ## Getting Started
 
