@@ -18,6 +18,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_ttc_ble/flutter_ttc_ble.dart';
 import 'package:flutter_ttc_ble_example/ble_manager.dart';
+import 'package:flutter_ttc_ble_example/oad_screen.dart';
 import 'log_util.dart';
 
 ///数据交互页面
@@ -274,6 +275,9 @@ class _CommPageState extends State<CommPage> with BleCallback2 {
                     ),
                   ],
                 ),
+                ElevatedButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => OADScreen(deviceId: _deviceId)));
+                }, child: const Text('OAD'),),
               ],
             ),
           ),
